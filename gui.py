@@ -1,6 +1,11 @@
 from modules import functions as fn
 import FreeSimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt","w") as file:
+        pass
 
 sg.theme("Black")
 
